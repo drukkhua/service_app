@@ -27,4 +27,3 @@ router = routers.DefaultRouter()
 router.register(r'api/subscriptions', SubscriptionView)
 
 urlpatterns += router.urls
-print(urlpatterns)
