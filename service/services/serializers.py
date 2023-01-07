@@ -13,8 +13,9 @@ class SubscriptionSerializer(serializers.ModelSerializer):
     plan = PlanSerializer()
     client_name = serializers.CharField(source='client.company_name')
     email = serializers.CharField(source='client.user.email')
-    price = serializers.DecimalField(max_digits=7, decimal_places=2)
 
+    # price = serializers.DecimalField(max_digits=7, decimal_places=2)
+    # PositiveIntegerField
     class Meta:
         model = Subscription
         fields = ('id', 'plan_id', 'client_name', 'email', 'plan', 'price')
