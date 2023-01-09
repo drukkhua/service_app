@@ -52,7 +52,7 @@ services:
   worker2:
     build:
       context: .
-    hostname: worker
+    hostname: worker2
     entrypoint: celery
     command: -A celery_app.app worker --loglevel=info
     volumes:

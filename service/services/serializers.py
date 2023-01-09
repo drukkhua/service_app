@@ -18,4 +18,4 @@ class SubscriptionSerializer(serializers.ModelSerializer):
     # PositiveIntegerField
     class Meta:
         model = Subscription
-        fields = ('id', 'plan_id', 'client_name', 'email', 'plan', 'price')
+        fields = ('id', 'plan_id', 'client_name', 'email', 'plan', 'price', 'comment')
